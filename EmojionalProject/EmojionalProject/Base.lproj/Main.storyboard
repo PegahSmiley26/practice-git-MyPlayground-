@@ -18,59 +18,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGg-5K-oIn">
-                                <rect key="frame" x="148" y="116" width="119" height="132"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRG-33-i1f">
+                                <rect key="frame" x="153" y="172" width="108" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <state key="normal" title="🇺🇸"/>
                                 <connections>
-                                    <action selector="uSA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JPK-vv-FuF"/>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SVc-RK-GbL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHV-HY-57v">
-                                <rect key="frame" x="153" y="229" width="108" height="132"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                <state key="normal" title="🇩🇪"/>
-                                <connections>
-                                    <action selector="gERMANY:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RZO-RI-isv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDB-2U-VB2">
-                                <rect key="frame" x="153" y="356" width="108" height="132"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Og-sr-EC4">
+                                <rect key="frame" x="153" y="343" width="108" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <state key="normal" title="🇷🇺"/>
                                 <connections>
-                                    <action selector="rUSSIA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hVp-cY-kzO"/>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GCZ-zZ-gp6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhe-lA-c72">
-                                <rect key="frame" x="153" y="478" width="108" height="132"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                <state key="normal" title="🇨🇦"/>
-                                <connections>
-                                    <action selector="cANDA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wjt-xa-MSV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="php-3h-idH">
-                                <rect key="frame" x="153" y="614" width="108" height="132"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQA-wO-Kqe">
+                                <rect key="frame" x="153" y="515" width="108" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <state key="normal" title="🇬🇧"/>
                                 <connections>
-                                    <action selector="greatBRITAIN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dhb-VI-nuK"/>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dbL-ua-IlB"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="php-3h-idH" firstAttribute="top" secondItem="Jhe-lA-c72" secondAttribute="bottom" constant="-14" id="0Yd-k1-xlx"/>
-                            <constraint firstItem="Jhe-lA-c72" firstAttribute="firstBaseline" secondItem="jDB-2U-VB2" secondAttribute="baseline" constant="120" symbolType="layoutAnchor" id="8i1-cO-qpH"/>
-                            <constraint firstItem="XGg-5K-oIn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="OC7-oP-Iux"/>
-                            <constraint firstItem="jDB-2U-VB2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U21-WF-i3m"/>
-                            <constraint firstItem="Jhe-lA-c72" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U3l-ye-O1F"/>
-                            <constraint firstItem="vHV-HY-57v" firstAttribute="top" secondItem="XGg-5K-oIn" secondAttribute="bottom" constant="-19" id="YRF-HD-7Kp"/>
-                            <constraint firstItem="php-3h-idH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pNZ-ha-FIW"/>
-                            <constraint firstItem="vHV-HY-57v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qj1-lT-sPR"/>
-                            <constraint firstItem="jDB-2U-VB2" firstAttribute="top" secondItem="vHV-HY-57v" secondAttribute="bottom" constant="15" id="r6t-Cm-7Mg"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.81543802351789862" green="0.83483241748209358" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

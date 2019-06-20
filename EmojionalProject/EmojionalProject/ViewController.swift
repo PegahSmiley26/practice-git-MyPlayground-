@@ -10,22 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    @IBAction func uSA(_ sender: UIButton) {
-
+    @IBAction func showMessage(sender: UIButton) {
+        let alertController = UIAlertController(title: "Alert", message: "hey", preferredStyle: UIAlertController.Style.alert)
+        
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        present(alertController, animated: true, completion: nil)
     }
-    @IBAction func gERMANY(_ sender: UIButton) {
-    }
-    @IBAction func rUSSIA(_ sender: UIButton) {
-    }
-    @IBAction func cANDA(_ sender: UIButton) {
-    }
-    @IBAction func greatBRITAIN(_ sender: UIButton) {
-    }
-    
 
 }
 
